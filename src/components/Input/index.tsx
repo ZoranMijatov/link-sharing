@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { ComponentPropsWithoutRef } from 'react';
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+type InputProps = ComponentPropsWithoutRef<'input'>;
 
 export const Input: React.FC<InputProps> = ({
   type,
